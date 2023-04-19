@@ -17,7 +17,7 @@ async function start() {
     ]
   });
 
-  for (let pageNum = 1; pageNum <= 500; pageNum++) { // Loop through the first 500 pages
+  for (let pageNum = 1; pageNum <= 76; pageNum++) { // Loop through the first 500 pages
     await page.goto(`https://apna.co/jobs?page=${pageNum}`);
     await page.screenshot({ path: `apna-${pageNum}.png` });
 
